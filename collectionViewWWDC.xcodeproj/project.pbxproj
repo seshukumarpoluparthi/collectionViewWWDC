@@ -12,6 +12,8 @@
 		283156CB21A9177600375C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283156C921A9177600375C9B /* Main.storyboard */; };
 		283156CD21A9178400375C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283156CC21A9178400375C9B /* Assets.xcassets */; };
 		283156D021A9178400375C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283156CE21A9178400375C9B /* LaunchScreen.storyboard */; };
+		283156D821A91F4700375C9B /* ColumnLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283156D721A91F4700375C9B /* ColumnLayout.swift */; };
+		283156DA21A9265F00375C9B /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283156D921A9265F00375C9B /* MosaicLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		283156CC21A9178400375C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		283156CF21A9178400375C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		283156D121A9178400375C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283156D721A91F4700375C9B /* ColumnLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnLayout.swift; sourceTree = "<group>"; };
+		283156D921A9265F00375C9B /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				283156CC21A9178400375C9B /* Assets.xcassets */,
 				283156CE21A9178400375C9B /* LaunchScreen.storyboard */,
 				283156D121A9178400375C9B /* Info.plist */,
+				283156D721A91F4700375C9B /* ColumnLayout.swift */,
+				283156D921A9265F00375C9B /* MosaicLayout.swift */,
 			);
 			path = collectionViewWWDC;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				283156C821A9177600375C9B /* ViewController.swift in Sources */,
 				283156C621A9177600375C9B /* AppDelegate.swift in Sources */,
+				283156D821A91F4700375C9B /* ColumnLayout.swift in Sources */,
+				283156DA21A9265F00375C9B /* MosaicLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
