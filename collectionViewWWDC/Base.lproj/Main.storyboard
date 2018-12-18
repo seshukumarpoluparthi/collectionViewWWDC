@@ -555,13 +555,49 @@
                     <view key="view" contentMode="scaleToFill" id="MLG-56-Igl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whW-cP-WXq">
+                                <rect key="frame" x="30" y="270" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.69803921570000005" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UtF-zM-kQX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4fr-TB-CXL" kind="show" id="8uI-K9-KMU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="whW-cP-WXq" firstAttribute="leading" secondItem="Red-id-rhK" secondAttribute="leading" constant="30" id="Bt6-ZV-qWQ"/>
+                            <constraint firstItem="Red-id-rhK" firstAttribute="trailing" secondItem="whW-cP-WXq" secondAttribute="trailing" constant="30" id="Doo-kP-b35"/>
+                            <constraint firstItem="whW-cP-WXq" firstAttribute="top" secondItem="Red-id-rhK" secondAttribute="top" constant="250" id="dhw-Is-W2g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Red-id-rhK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8O-sa-NQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3671" y="-262"/>
+            <point key="canvasLocation" x="-3671.1999999999998" y="-262.21889055472263"/>
+        </scene>
+        <!--StructVC2-->
+        <scene sceneID="ITn-Op-F8c">
+            <objects>
+                <viewController storyboardIdentifier="StructVC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fr-TB-CXL" customClass="StructVC2" customModule="collectionViewWWDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sKP-do-4Fd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pnB-b1-nwd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqZ-2K-uRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2982" y="-262"/>
         </scene>
         <!--Pop UpVC-->
         <scene sceneID="tzH-0i-V4g">

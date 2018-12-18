@@ -47,6 +47,7 @@
 		2854E80621C5789E00F502D2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2854E80421C5789E00F502D2 /* HomeViewController.xib */; };
 		28B21F8A21C648F600C143AE /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21F8921C648F600C143AE /* PopUpVC.swift */; };
 		28B21F9A21C895AD00C143AE /* StructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21F9921C895AD00C143AE /* StructVC.swift */; };
+		28B21F9C21C8D32D00C143AE /* StructVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21F9B21C8D32D00C143AE /* StructVC2.swift */; };
 		28BB289021B9768600173B51 /* ColViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB288F21B9768600173B51 /* ColViewVC.swift */; };
 		28BB289221B976AA00173B51 /* CVCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB289121B976AA00173B51 /* CVCell1.swift */; };
 		28BB289921B97BF500173B51 /* CVCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB289821B97BF500173B51 /* CVCell2.swift */; };
@@ -95,6 +96,7 @@
 		2854E80421C5789E00F502D2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		28B21F8921C648F600C143AE /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 		28B21F9921C895AD00C143AE /* StructVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVC.swift; sourceTree = "<group>"; };
+		28B21F9B21C8D32D00C143AE /* StructVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVC2.swift; sourceTree = "<group>"; };
 		28BB288F21B9768600173B51 /* ColViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColViewVC.swift; sourceTree = "<group>"; };
 		28BB289121B976AA00173B51 /* CVCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell1.swift; sourceTree = "<group>"; };
 		28BB289821B97BF500173B51 /* CVCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell2.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				28B21F9921C895AD00C143AE /* StructVC.swift */,
+				28B21F9B21C8D32D00C143AE /* StructVC2.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B21F9C21C8D32D00C143AE /* StructVC2.swift in Sources */,
 				283156C821A9177600375C9B /* ViewController.swift in Sources */,
 				283156C621A9177600375C9B /* AppDelegate.swift in Sources */,
 				2824E8D721BA7B240043A0BA /* TripModel.swift in Sources */,
