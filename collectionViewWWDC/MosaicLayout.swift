@@ -15,30 +15,10 @@ class MosaicLayout: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()
-        
         guard let cv = collectionView else {
             return
         }
-        
         cachedAttributes.removeAll()
         contentBounds = CGRect(origin: .zero, size: cv.bounds.size)
-        
-        
-        
-        
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }

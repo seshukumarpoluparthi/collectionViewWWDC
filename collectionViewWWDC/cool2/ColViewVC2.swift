@@ -13,15 +13,15 @@ class ColViewVC2: UIViewController {
     
     @IBOutlet weak var CollectionView2: UICollectionView!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-CollectionView2.delegate = self
-CollectionView2.dataSource = self
+        CollectionView2.delegate = self
+        CollectionView2.dataSource = self
         
     }
     
-
+    
     
 }
 

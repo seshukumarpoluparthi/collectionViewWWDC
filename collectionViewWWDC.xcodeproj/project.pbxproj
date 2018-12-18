@@ -46,6 +46,7 @@
 		2854E80521C5789E00F502D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2854E80321C5789E00F502D2 /* HomeViewController.swift */; };
 		2854E80621C5789E00F502D2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2854E80421C5789E00F502D2 /* HomeViewController.xib */; };
 		28B21F8A21C648F600C143AE /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21F8921C648F600C143AE /* PopUpVC.swift */; };
+		28B21F9A21C895AD00C143AE /* StructVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B21F9921C895AD00C143AE /* StructVC.swift */; };
 		28BB289021B9768600173B51 /* ColViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB288F21B9768600173B51 /* ColViewVC.swift */; };
 		28BB289221B976AA00173B51 /* CVCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB289121B976AA00173B51 /* CVCell1.swift */; };
 		28BB289921B97BF500173B51 /* CVCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB289821B97BF500173B51 /* CVCell2.swift */; };
@@ -93,6 +94,7 @@
 		2854E80321C5789E00F502D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2854E80421C5789E00F502D2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		28B21F8921C648F600C143AE /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		28B21F9921C895AD00C143AE /* StructVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructVC.swift; sourceTree = "<group>"; };
 		28BB288F21B9768600173B51 /* ColViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColViewVC.swift; sourceTree = "<group>"; };
 		28BB289121B976AA00173B51 /* CVCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell1.swift; sourceTree = "<group>"; };
 		28BB289821B97BF500173B51 /* CVCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCell2.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		283156B921A9177600375C9B = {
 			isa = PBXGroup;
 			children = (
+				28B21F9821C8959100C143AE /* New Group */,
 				28B21F8821C648D700C143AE /* PopUp */,
 				2854E7FD21C5781500F502D2 /* PopUp1 */,
 				284540AC21BE7A7C007E7D67 /* VC1.swift */,
@@ -297,6 +300,14 @@
 				28B21F8921C648F600C143AE /* PopUpVC.swift */,
 			);
 			path = PopUp;
+			sourceTree = "<group>";
+		};
+		28B21F9821C8959100C143AE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				28B21F9921C895AD00C143AE /* StructVC.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		28BB288E21B9765000173B51 /* cool1 */ = {
@@ -408,6 +419,7 @@
 				2824E8EE21BA947F0043A0BA /* FloatingActionButton.swift in Sources */,
 				283156D821A91F4700375C9B /* ColumnLayout.swift in Sources */,
 				2824E8E221BA850F0043A0BA /* TripsTableViewCell.swift in Sources */,
+				28B21F9A21C895AD00C143AE /* StructVC.swift in Sources */,
 				2824E8EA21BA8D170043A0BA /* Theme.swift in Sources */,
 				2824E90D21BD28460043A0BA /* MockData.swift in Sources */,
 				2824E8DC21BA7C660043A0BA /* Data.swift in Sources */,

@@ -26,6 +26,19 @@ struct product_obj1 : Codable {
 }
 
 
+struct DictObj: Codable {
+    let CreatedTime : String
+    let UpdatedTime : String
+    let image : String?
+    let name : String
+    let overview : String
+    let email : String?
+}
+
+
+
+
+
 class ColViewVC: UIViewController {
     @IBOutlet weak var collectionview1: UICollectionView!
     
@@ -42,10 +55,11 @@ class ColViewVC: UIViewController {
     }
     
     var addprop = [product_obj1]()
-    
+    var dict4 = [DictObj]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionview1.delegate = self
         collectionview1.dataSource = self
         postingParameters()
@@ -64,7 +78,6 @@ class ColViewVC: UIViewController {
         ApiManager.Shared.PostCodable(url: "http://13.112.156.167:8500/api/manager", jsonbody: json_body) { (data) in
             //   print(data)
             DispatchQueue.main.async {
-                
                 do{
                     let resp = try JSONDecoder().decode(ModelProduct.self, from: data)
                     //      print(resp)
@@ -73,15 +86,30 @@ class ColViewVC: UIViewController {
                         let car = carts(products: self.products[i], orderCount: 0)
                         self.cart_Obj.append(car)
                     }
-            // insert property into struct
+                    // insert property into struct
                     for i in 0..<self.products.count{
                         let vc = product_obj1(_id: self.products[i]._id, orderCount: 0)
                         self.addprop.append(vc)
                     }
                     print(self.addprop)
-                    
-                    //                let jsonstr = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                    //                    print(jsonstr)
+                    //json : [String : Any]
+                    let jsonstr : [String:Any] = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! [String : Any]
+                    print(jsonstr)
+                    print(jsonstr["Data"]!)
+                    let dict = jsonstr["Data"]!
+                    let jsonData = try? JSONSerialization.data(withJSONObject: dict, options: [])
+                    //let jsonString = String(data: jsonData!, encoding: .utf8)
+                    //       print(jsonString!)
+                    do{
+        let decode = try JSONDecoder().decode([DictObj].self, from: jsonData!)
+        self.dict4 = decode
+        print(decode)
+                        for i in self.dict4{
+                            print(i.email ?? "seshuavesh@gmail.com")
+                        }
+                    } catch{
+                        print(error.localizedDescription)
+                    }
                 }catch{
                     print(error.localizedDescription)
                 }
@@ -95,8 +123,8 @@ class ColViewVC: UIViewController {
     }
     @objc func onAddDeleteCartButtonTapped(sender:UIButton){
         if self.cart_Obj[sender.tag].orderCount != 0 {
-        self.cart_Obj[sender.tag].orderCount -= 1
-        collectionview1.reloadData()
+            self.cart_Obj[sender.tag].orderCount -= 1
+            collectionview1.reloadData()
         }
         
     }
@@ -109,7 +137,7 @@ extension ColViewVC : UICollectionViewDelegate,UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionview1.dequeueReusableCell(withReuseIdentifier: "CVCell1", for: indexPath) as! CVCell1
-       // cell.view_bg1.backgroundColor = UIColor.lightGray
+        // cell.view_bg1.backgroundColor = UIColor.lightGray
         let url = URL(string: cart_Obj[indexPath.row].products.image)
         cell.img_product.load(url: url!)
         cell.lbl_overview.text = cart_Obj[indexPath.row].products.overview

@@ -83,7 +83,7 @@ extension TripViewController : UITableViewDelegate{
         
         
         let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view, actionPerformed : @escaping (Bool) -> ()) in
-            let alert = UIAlertController(title: "Delete Trip", message: "are u sure you want to delete this trip \(trip.title!)", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Delete Trip", message: "are u sure you want to delete this trip \(trip.title)", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (alertAction) in
                 actionPerformed(false)
             }))
